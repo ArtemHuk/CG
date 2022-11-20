@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="theoryStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Oswald&family=Roboto+Slab:wght@400;700&family=Square+Peg&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class = "theory-title">Фрактал Ньютона</h1>
+    <p class = "theory-text" >Поняття фрактал і фрактальна геометрія, що з’явилися в кінці 70-х, із середини 80-х міцно увійшли до ужитку математиків і програмістів. Слово фрактал утворено від латинського “fractus”, що в перекладі означає “той, що складається з фрагментів”. Воно було запропоноване Бенуа Мандельбротом у 1975 році для позначення нерегулярних, але самоподібних структур, якими він займався. Народження фрактальної геометрії прийнято пов’язувати з виходом у 1977 році книги Мандельброта “The Fractal Geometry of Nature”. У його роботах використані наукові результати інших учених, що працювали в період 1875–1925 років у тій же області (Пуанкаре, Фату, Жюліа, Кантор, Хаусдорф). Але тільки у наш час вдалося об’єднати їхні роботи в єдину систему.
+        Роль фракталів в комп’ютерній графіці сьогодні велика. Вони приходять на допомогу, наприклад, коли потрібно за допомогою декількох коефіцієнтів задати лінії і поверхні дуже складної форми. З погляду комп’ютерної графіки, фрактальна геометрія незамінна під час генерації штучних хмар, гір, поверхні морів. Фактично знайдено спосіб легкого представлення складних  об’єктів, які схожі на природні.
+        Однією з основних властивостей фракталів є самоподібність. У найпростішому випадку невелика частина фрактала містить інформацію про весь фрактал.
+        Визначення фрактала, дане Мандельбротом, звучить так: “Фракталом називається структура, що складається з частин, які в якомусь сенсі подібні до цілого”.
+    </p>                                        
+    <div class="theory-columns">
+        <div class="theory-column">
+            <div class="image-cover">
+                <img src="images/theory/newton.jpg" alt="" class="image">
+                <img src="images/theory/bigsimple.png" alt="" class="image">
+            </div>
+            <p class="theory-text">
+                Алгебраїчні фрактали - це найбільша група фракталів. Отримують їх за допомогою нелінійних процесів в n-мірних просторах. Найбільше вивчені двомірні процеси. Інтерпретуючи нелінійний ітераційний процес, як дискретну динамічну систему, можна користуватися термінологією теорії цих систем: фазовий портрет, сталий процес, аттрактор і т.д.
+Відомо, що нелінійні динамічні системи володіють декількома стійкими станами. Той стан, в якому опинилася динамічна система після деякого числа ітерацій, залежить від її початкового стану. Тому кожен стійкий стан (або як говорять – аттрактор) володіє деякою областю початкових станів, з яких система обов’язково потрапить в дані кінцеві стани. Таким чином, фазовий простір системи розбивається на області тяжіння аттракторів. Якщо фазовим є двомірний простір, то забарвлюючи області тяжіння різними кольорами, можна отримати колірний фазовий портрет цієї системи (ітераційного процесу). Міняючи алгоритм вибору кольору, можна отримати складні фрактальні картини з химерними багатоколірними узорами. Несподіванкою для математиків стала можливість за допомогою примітивних алгоритмів породжувати дуже складні нетривіальні структури.
+            </p>
+        </div>
+        <div class="theory-column">
+           <p class="theory-text">
+            Геометричні фрактали є найнаочніші. Цей тип фракталів утворюється шляхом простих геометричних побудов. Наприклад, у двомірному випадку їх отримують за допомогою деякої ламаної (або поверхні в тривимірному випадку), званої генератором. За один крок алгоритму кожен з відрізків (складових ламаної) замінюється на ламану-генератор, у відповідному масштабі. У результаті нескінченного повторення цієї процедури, виходить геометричний фрактал.
+Перші ідеї фрактальної геометрії виникли в ХІХ ст. Кантор за допомогою простої рекурсивної процедури перетворив лінію на набір незв’язаних крапок (так званий Пил Кантора). Він брав лінію і видаляв центральну третину, після цього повторював те ж саме з відрізками.
+           </p>
+           <div class="image-cover">
+            <img src="images/theory/large_thumbnail.jpg" alt="" class="image">
+            <img src="images/theory/256px-T-Square_fractal_(8_iterations).png" alt="" class="image">
+        </div>
+        
+    </div>
+    </div>
+    <div class="video">
+        <iframe style="margin-top: 40px;" width="800" height="500"
+            src="https://www.youtube.com/embed/WFtTdf3I6Ug">
+        </iframe>
+    </div>
+    <div class="test-column">
+        <div class="test-box">
+            <h4>
+                Тест 1
+            </h4>
+            <div class="test-description">
+                <p>
+                    Виберіть назву фракталу<br/> зображеного на малюнку 
+                </p>
+                <div class="color-square" 
+                    style="background-image: url(./images/theory/newton.jpg);
+                    background-size: cover;
+                    background-position: center;">
+
+                </div>
+            </div>
+            <div class="answer-column">
+                <div class="answer-line">
+                    <input type="radio" id="answer1_1"
+                    name="test1" value="Ньютона">
+                    <label for="answer1_1">Ньютона</label>
+                </div>
+                <div class="answer-line">
+                    <input type="radio" id="answer2_1"
+                    name="test1" value="Т-фрактал">
+                    <label for="answer2_1">Т-фрактал</label>
+                </div>
+                <div class="answer-line answer-last-line">
+                    <input type="radio" id="answer3_1"
+                    name="test1" value="Дерево Піфагора">
+                    <label for="answer3_1">Дерево Піфагора</label>
+                </div>     
+            </div>
+        </div>
+
+        <div class="test-box">
+            <h4>
+                Тест 2
+            </h4>
+            <div class="test-description">
+                <p>
+                    Виберіть назву фракталу <br/>зображеного на малюнку 
+                </p>
+                <div class="color-square" 
+                style="background-image: url(./images/theory/large_thumbnail.jpg);
+                background-size: cover;
+                    background-position: center;">
+                    <!-- hsl(68, 100%, 60.2%) -->
+                </div>
+            </div>
+            <div class="answer-column">
+                <div class="answer-line">
+                    <input type="radio" id="answer1_2"
+                    name="test2" value="Ньютона">
+                    <label for="answer1_2">Ньютона</label>
+                </div>
+                <div class="answer-line">
+                    <input type="radio" id="answer2_2"
+                    name="test2" value="Т-фрактал">
+                    <label for="answer2_2">Т-фрактал</label>
+                </div>
+                <div class="answer-line answer-last-line">
+                    <input type="radio" id="answer3_2"
+                    name="test2" value="Дерево Піфагора">
+                    <label for="answer3_2">Дерево Піфагора</label>
+                </div>     
+            </div>
+        </div>
+        <div class="test-box">
+            <h4>
+                Тест 3
+            </h4>
+            <div class="test-description">
+                <p>
+                    Які фрактали застосовуються для зображення ландшафту
+                </p>
+            </div>
+            <div class="answer-column">
+                <div class="answer-line">
+                    <input type="radio" id="answer1_3"
+                    name="test3" value="Алгебраїчні">
+                    <label for="answer1_3">Алгебраїчні</label>
+                </div>
+                <div class="answer-line">
+                    <input type="radio" id="answer2_3"
+                    name="test3" value="Геометричні">
+                    <label for="answer2_3">Геометричні</label>
+                </div>
+                <div class="answer-line answer-last-line">
+                    <input type="radio" id="answer3_3"
+                    name="test3" value="Стохастичні">
+                    <label for="answer3_3">Стохастичні</label>
+                </div>     
+            </div>
+        </div>
+        <button class="submit-button">Відповісти</button>
+        <a href="fractals.html" class="back"></a>
+
+    </div>  
+  
+    <script>
+    document.querySelector('.submit-button').addEventListener('click',()=>{
+        let answers1 = document.getElementsByName('test1');
+        let answers2 = document.getElementsByName('test2');
+        let answers3 = document.getElementsByName('test3');
+        let passed = true;
+        answers1.forEach(answer => {
+            if(answer.checked){
+                if(answer.value !== 'Ньютона'){
+                    passed = false;
+                    console.log(answer.value);
+                }
+            }
+        });
+        answers2.forEach(answer => {
+            if(answer.checked){
+
+                if(answer.value !== 'Дерево Піфагора'){
+                    passed = false;
+
+                }
+            }
+    
+        });
+        answers3.forEach(answer => {
+
+            if(answer.checked){
+                if(answer.value !== 'Стохастичні'){
+                    passed = false;
+                    console.log(answer.value);
+
+                }
+            }
+        });
+        if(passed){
+            alert('Вітаю, ви успішно склали тест!');
+        } else{
+            alert('Ви зробили помилку, перегляньте тест ще раз!');
+        }
+
+    })  
+
+    </script>
+</body>
+</html>

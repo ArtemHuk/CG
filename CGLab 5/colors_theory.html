@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="theoryStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Oswald&family=Roboto+Slab:wght@400;700&family=Square+Peg&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class = "theory-title">Колірні моделі</h1>
+    <p class = "theory-text" >Призначення колірної моделі - дати засоби опису
+        кольору в межах деякого колірного діапазону, у тому
+        числі і для виконання інтерполяції кольорів.
+        Колірні моделі враховують біологію, фізику і математику
+        кольору.
+        Існують різні моделі, оскільки із зображенням
+        виконуються різні дії: відображення на екран, видрук
+        на принтер, опрацювання кольорів, перетворення в
+        сірі тони, корекція яскравості, інтенсивності і т.п.
+        Кожна модель має своє призначення, тобто ефективна
+        для виконання окремих операцій.</p>
+                                            
+    <div class="theory-columns">
+        <div class="theory-column">
+            <div class="image-cover">
+                <img src="images/theory/rgb.jpg" alt="" class="image">
+                <img src="images/theory/cube.png" alt="" class="image">
+            </div>
+            <p class="theory-text">Rgb - це апаратно-орієнтована модель, в якій кольори описуються за допомогою  змішування трьох базових кольорів –  червоного (R), зеленого (G), синього (B) – в різних пропорціях
+                Саме завдяки змішуванню кольорів цю модель називають адитивною (від англ. додавати).
+                RGB працює за принципом випромінювання, тому цю модель називають апаратно-орієнтованою, адже вона призначена для дисплеїв.
+                Змішуючи три базові кольори, можна отримати велику кількість інших, при змішування всіх кольорів з максимальною інтенсивністю утворить білий колір, однаковою інтенсивністю - відтінки сірого, відсутність кольорів - чорний.
+                R,g та b можуть набувавати значень відо 0 до 255, що утворює їх головний недолік - неможливість відображення деяких зелено-синіхх кольорів через неможливість подання параметру r від'ємним числом. Кольори показово зображати у вигляді куба, де базові кольори - сторони куба, точка (0,0) - чорний колір, (1,1) - білий.
+            </p>
+        </div>
+        <div class="theory-column">
+           <p class="theory-text">
+            Модель hsl використовується, щоб позбутися
+            обмежень, що накладаються апаратним забезпеченням. Ця модель використовується, коли коректують яскравість, насиченість,
+            перетворюють зображення в сіре. Її ще називають перцепційною, що походить від слова "відчувати", адже спосіб представлення кольору більш близький до сприйняття кольору людським оком, тому цю модель можна вважати апаратно-незалежною
+            HSL задається трьома атрибутами:Hue – колірний тон, Saturation - насиченість , L – освітленість, вказує величину чорного
+            відтінку, доданого до кольору.. Ця модель побудована на основі суб'єктивного сприйняття кольору людиною і добре узгоджується з нею.
+            Величина H задається в діапазоні 0° - 360°, де 0° - червоний, 120°- зелений...  розміщення кольорів можна запам'ятати за приказкою: <i style="color: red;">Чому</i> <i style="color: orange;">Пінгвіни</i> <i style="color: yellow;">Живуть</i> <i style="color: green;">Зимою</i> <i style="color: cyan;">Без</i> <i style="color: blue;">Своїх</i> 
+            <i style="color: purple;">Фантазій</i>.
+           </p>
+           <div class="image-cover">
+            <img src="images/theory/hsl.png" alt="" class="image">
+            <img src="images/theory/hsl2.jpg" alt="" class="image">
+        </div>
+    </div>
+    </div>
+    <div class="test-column">
+        <div class="test-box">
+            <h4>
+                Тест 1
+            </h4>
+            <div class="test-description">
+                <p>
+                    Виберіть значення кольору в RGB 
+                </p>
+                <div class="color-square" 
+                    style="background-color: rgb(255, 99, 71);">
+                </div>
+            </div>
+            <div class="answer-column">
+                <div class="answer-line">
+                    <input type="radio" id="answer1_1"
+                    name="test1" value="rgb(255, 99, 71)">
+                    <label for="answer1_1">rgb(255, 99, 71)</label>
+                </div>
+                <div class="answer-line">
+                    <input type="radio" id="answer2_1"
+                    name="test1" value="rgb(12, 255, 71)">
+                    <label for="answer2_1">rgb(12, 255, 71)</label>
+                </div>
+                <div class="answer-line answer-last-line">
+                    <input type="radio" id="answer3_1"
+                    name="test1" value="rgb(20, 56, 240)">
+                    <label for="answer3_1">rgb(20, 56, 240)</label>
+                </div>     
+            </div>
+        </div>
+
+        <div class="test-box">
+            <h4>
+                Тест 2
+            </h4>
+            <div class="test-description">
+                <p>
+                    Виберіть значення кольору в HSL
+                </p>
+                <div class="color-square" 
+                    style="background-color: rgb(228, 255, 52);"> 
+                    <!-- hsl(68, 100%, 60.2%) -->
+                </div>
+            </div>
+            <div class="answer-column">
+                <div class="answer-line">
+                    <input type="radio" id="answer1_2"
+                    name="test2" value="hsl(320, 100%, 55%)">
+                    <label for="answer1_2">hsl(320, 100%, 55%)</label>
+                </div>
+                <div class="answer-line">
+                    <input type="radio" id="answer2_2"
+                    name="test2" value="hsl(68, 100%, 60.2%)">
+                    <label for="answer2_2">hsl(68, 100%, 60.2%)</label>
+                </div>
+                <div class="answer-line answer-last-line">
+                    <input type="radio" id="answer3_2"
+                    name="test2" value="hsl(240, 100%, 45%)">
+                    <label for="answer3_2">hsl(240, 100%, 45%)</label>
+                </div>     
+            </div>
+        </div>
+        <div class="test-box">
+            <h4>
+                Тест 3
+            </h4>
+            <div class="test-description">
+                <p>
+                    Виберіть значення кольору заданого в rgb(21, 17, 255) в моделі HSL
+                </p>
+            </div>
+            <div class="answer-column">
+                <div class="answer-line">
+                    <input type="radio" id="answer1_3"
+                    name="test3" value="hsl(320, 100%, 55%)">
+                    <label for="answer1_3">hsl(12, 100%, 80%)</label>
+                </div>
+                <div class="answer-line">
+                    <input type="radio" id="answer2_3"
+                    name="test3" value="hsl(68, 100%, 60.2%)">
+                    <label for="answer2_3">hsl(100, 100%, 60.2%)</label>
+                </div>
+                <div class="answer-line answer-last-line">
+                    <input type="radio" id="answer3_3"
+                    name="test3" value="hsl(241, 100%, 51.3%)">
+                    <label for="answer3_3">hsl(241, 100%, 51.3%)</label>
+                </div>     
+            </div>
+        </div>
+        <button class="submit-button">Відповісти</button>
+        <a href="colors.html" class="back"></a>
+
+    </div>  
+  
+    <script>
+    document.querySelector('.submit-button').addEventListener('click',()=>{
+        let answers1 = document.getElementsByName('test1');
+        let answers2 = document.getElementsByName('test2');
+        let answers3 = document.getElementsByName('test3');
+        let passed = true;
+        answers1.forEach(answer => {
+            if(answer.checked){
+                if(answer.value !== 'rgb(255, 99, 71)'){
+                    passed = false;
+                    console.log(answer.value);
+                }
+            }
+        });
+        answers2.forEach(answer => {
+            if(answer.checked){
+
+                if(answer.value !== 'hsl(68, 100%, 60.2%)'){
+                    passed = false;
+
+                }
+            }
+    
+        });
+        answers3.forEach(answer => {
+
+            if(answer.checked){
+                if(answer.value !== 'hsl(241, 100%, 51.3%)'){
+                    passed = false;
+                    console.log(answer.value);
+
+                }
+            }
+        });
+        if(passed){
+            alert('Вітаю, ви успішно склали тест!');
+        } else{
+            alert('Ви зробили помилку, перегляньте тест ще раз!');
+        }
+
+    })  
+
+    </script>
+</body>
+</html>

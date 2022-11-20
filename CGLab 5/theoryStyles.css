@@ -1,0 +1,120 @@
+body{
+    background-image: url('images/Background/Background1.png');
+    background-size: 100%;
+    font-family: 'Caveat';
+    position: relative;
+}
+.theory-title{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+.theory-text{
+    font-size: 28px;
+}
+.theory-columns{
+    display: flex;
+    gap: 50px;
+
+}
+.theory-column{
+    flex-basis: 45%;
+    padding: 0 10px;
+    position: relative;
+}
+.image-cover{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.image{
+    width: 45%;
+    max-width: 45%;
+}
+.test-column { 
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+    align-items: center; 
+    font-size: 28px;
+} 
+ 
+.test-box { 
+    border-radius: 16px; 
+    background-color: white; 
+    cursor: pointer; 
+    width: 500px; 
+    margin: 20px; 
+    height: fit-content; 
+    padding-left: 20px; 
+    border: 3px solid black;
+} 
+ 
+.answer-column { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around; 
+    height: fit-content; 
+} 
+ 
+.answer-line { 
+    display: inline-block; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+} 
+ 
+.answer-last-line { 
+    margin-bottom: 20px; 
+} 
+ 
+.test-description { 
+    height: fit-content; 
+    display: flex; 
+} 
+ 
+.color-square {  
+    width: 100px; 
+    height: 100px; 
+    aspect-ratio: 1!important;  
+    margin: 0 0 0 50px;  
+    position: relative;  
+    bottom: 10px;  
+}
+.submit-button{
+    transition: all 0.7s ease;
+
+    width: 35%;
+    cursor: pointer;
+    background-color: #0881A3;
+    border: 3px solid black;
+    padding: 20px 5px;
+    font-family: 'Caveat';
+    font-size: 28px;
+    color: #FFFDFB;
+    border-radius: 16px;
+}
+.submit-button:hover{
+    background-color: #0E6882;
+    transition: all 0.7s ease;
+}
+.back{
+    transition: all 0.7s ease;
+    display: block;
+    position: absolute;
+    width: 100px;
+    aspect-ratio: 1.0198;
+    bottom: -10px;
+    right: 40px;
+    background-image: url('images/theory/back.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.back:hover{
+    filter: grayscale(40%);
+    transition: all 0.7s ease;
+}
+.video{
+    display: flex;
+    justify-content: center;
+}
+

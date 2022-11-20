@@ -1,0 +1,268 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/Background/Rectangle\ 7.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    font-family: 'Caveat';
+    position: relative;
+
+}
+.header{
+    background-color: #0881A3;
+    max-width: 1920px;
+    aspect-ratio: 20;
+    display: flex;
+    align-items: center;
+    padding: 0 1%;
+    justify-content: space-between;
+}
+.logo{
+    transition: all .7s ease;
+    display: block;
+    width: 4%;
+    aspect-ratio: 1/1;
+    background-image: url('images/logo.png');
+    background-size: cover;
+}
+.logo:hover{
+    opacity: 0.7;
+    transition: all .7s ease;
+}
+.theoretics{
+    transition: all .7s ease;
+    display: block;
+    width: 3.5%;
+    aspect-ratio: 1/1;
+    background-image: url('images/UserGuide.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.theoretics:hover{
+    opacity: .7;
+    transition: all .7s ease;
+
+}
+.footer{
+    max-width: 1920px;
+    background-color: #0881A3;
+    aspect-ratio: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.footer-buttons{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.facebook-logo{
+    transition: all .7s ease;
+    display: block;
+    width: 15%;
+    aspect-ratio: 1/1;
+    background-image: url('./images/FacebookLogo.png');
+    background-size: contain;
+}
+.twitter-logo{
+    transition: all .7s ease;
+    display: block;
+    width: 15%;
+    aspect-ratio: 1/1;
+    background-image: url('./images/Twitter.png');
+    background-size: contain;
+}
+.google-logo{
+    transition: all .7s ease;
+    display: block;
+    width: 15%;
+    aspect-ratio: 1/1;
+    background-image: url('./images/GooglePlus.png');
+    background-size: contain;
+    background-image: url('images/GooglePlus.png');
+    background-size: cover;
+}
+.twitter-logo:hover, .google-logo:hover, .facebook-logo:hover{
+    opacity: .7;
+    transition: all .7s ease;
+ 
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.welcome-block{
+    width: 30%;
+    position: relative;
+    margin: 0;
+    background-image: url('./images/Background/C2.png');
+    background-size: 200%;
+    border-radius: 16px;
+    background-position: center;
+}
+.welcome-text{
+    font-size: 28px;
+    text-align: center;
+    margin: 0;
+}
+.block1{
+    right: -1000px;
+}
+.block2{
+    left: 10%;
+
+}
+
+.welcome-buttons{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 20px;
+    left: 50%;
+    transform:translateX(-50%);
+    top: 430px;
+}
+button{
+    width: 400px;
+    height: 80px;
+    border-radius: 16px;
+    font-size: 40px;
+    font-family: 'Caveat';
+    cursor: pointer;
+    
+}
+
+.main-button{
+    transition: all .7s ease;
+    text-decoration: none;
+    background-color: #0881A3;
+    color: #FDE9DF;
+    text-align: center;
+    border: 5px solid #FDE9DF;
+    width: 400px;
+    display: block;
+    /*height: 80px;*/
+    padding: 15px 0;
+    border-radius: 16px;
+    font-size: 40px;
+    font-family: 'Caveat';
+}
+.secondary-button{
+    transition: all .7s ease;
+    cursor: pointer;
+    background-color: #FDE9DF;
+    color: #0881A3;
+    border: none;
+}
+.buttons{ 
+    display: flex; 
+    width: 100%; 
+    gap: 50px;
+    justify-content: center;
+} 
+ 
+
+.button-bur{ 
+    margin-top: 40px; 
+    width: 18%; 
+    aspect-ratio: 0.58; 
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5); 
+    border-radius: 16px; 
+    padding: 0; 
+} 
+ 
+.button-hex{ 
+    background-image: url('./images/Hex.png'); 
+    background-size: cover; 
+    background-position: center; 
+} 
+ 
+.button-color{ 
+    background-image: url('./images/Color.png'); 
+    background-size: cover; 
+    background-position: center; 
+} 
+ 
+.button-fractal{ 
+    background-image: url('./images/Fractal.png'); 
+    background-size: cover; 
+    background-position: center; 
+} 
+ 
+.button-link{ 
+    display: block; 
+    height: 100%; 
+}
+
+.main-button:hover{
+    background-color: #0E6882;
+    transition: all .7s ease;
+}
+
+
+
+.secondary-button:hover{
+    background-color: #FFD6A4;
+    border: 3px solid #0881A3;
+    transition: all .7s ease;
+}
+
+.secondary-button:visited{
+    opacity: 0.7;
+    transition: all .7s ease;
+}
+
+.error{
+    border-radius: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 600px;
+    height: 200px;
+    background-color: #FFFDFB;
+    gap: 20px;
+}
+.error-title{
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.error-submit{
+   font-size: 28px;
+   height: 50px;
+   width: 90%;
+   background-color: #FDE9DF;
+   border: none;
+   transition: all 0.7s ease;
+}
+.error-submit:hover{
+    filter: grayscale(50%);
+    transition: all 0.7s ease;
+}
+.error-logo{
+    background-image: url('./images/sad-svgrepo-com\ 1.png');
+    flex-basis:30%;
+    aspect-ratio: 1;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.error-message{
+    font-size: 28px;
+    text-align: center;
+}
+.button-bur:hover {   
+    transition: all .7s ease; 
+    filter: grayscale(40%); 
+}

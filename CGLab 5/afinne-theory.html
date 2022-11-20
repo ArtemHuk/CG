@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="theoryStyles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Oswald&family=Roboto+Slab:wght@400;700&family=Square+Peg&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class = "theory-title">Афінні перетворення</h1>
+    <p class = "theory-text" >Виконання різноманітних дій з геометричними об’єктами є центральною задачею в комп’ютерній графіці. Тому вибір математичних методів і алгоритмів для її реалізації суттєво впливає на ефективність цілої графічної системи. У сучасній комп’ютерній графіці досить широко використовується метод координат, оскільки графічне зображення складається з пікселів, які задаються координатами. Крім цього, координати використовуються для опису розміщення об’єктів та для створення зображень шляхом перетворень з однієї системи координат в іншу. Афінним називається перетворення, що має такі властивостями:<br>
+              ● будь-яке афінне перетворення може бути представлене як послідовність операцій з числа найпростіших: зсув, розтягнення/стиснення, поворот;<br>
+              ● зберігаються прямі лінії, паралельність прямих, відношення довжин відрізків, що лежать на одній прямій, і відношення площ фігур.</p>                                   
+    <div class="theory-columns">
+        <div class="theory-column">
+            <div class="image-cover">
+                <img src="images/theory/afinne1.png" alt="" class="image">
+                <img src="images/theory/afinne2.png" alt="" class="image">
+            </div>
+            <p class="theory-text">
+                Афінні перетворення є трьох видів: переміщення, масштабування, поворот на кут. При цьому перетворення можна проводити як відносно системи координат, так і відносно об'єкту зображення. Наприклад, паралельний зсув координат точки на
+                вектор (m, n) в даній системі
+                координат задається формулами :<br>
+                x′ = x + m,<br>
+                y′ = y + n; <br>
+                А зсув системи координат на вектор (m, n)задається формулами :<br> x′ = x – m,<br>
+                y′ = y – n<br>Розтяг/стиск вздовж координатних осей можна
+                записати формулами<br>
+                 x′ = aх,<br>
+                 y′ = dy. <br>
+                 Поворот точки відносно початку координат
+на кут ϕ проти годинникової стрілки
+задається формулами:<br>
+x′ = xcosϕ – ysinϕ ,<br>
+y′ = xsinϕ + ycosϕ ;<br>
+А поворот системи координат на кут ϕ
+проти годинникової стрілки
+задається формулами:<br>
+x′ = xcosϕ + ysinϕ ,<br>
+ y′ = –xsinϕ + ycosϕ <br>
+            </p>
+        </div>
+        <div class="theory-column">
+           <p class="theory-text">
+            Для комфорту обчислень формули переводять в мартичний запис. При цьому для повноцінної роботи з усіма видами перетворень вводять однорідні координати, що дещо видозмінюють вигляд матриці перетворень, проте дозволяють нам виконувати довільні афінні перетворення. Однорідні координати - це нескладно, просто довільній точці M(x, y)
+            площини ставиться у відповідність точка
+            M′(x, y, 1) або M′(hx, hy, h), h ≠ 0 в
+            просторі. Таким чином матриці зсуву, масштабування та повороту на кут відповідно виглядатимуть отак:
+           </p>
+           <div style="flex-wrap: wrap;" class="image-cover">
+            <img src="images/theory/afinne3.png" alt="" class="image">
+            <img src="images/theory/afinne4.png" alt="" class="image">
+            <img src="images/theory/afinne5.png" alt="" class="image">
+        </div>
+        <p class="theory-text">
+            Для того, щоб задати декілька перетворень об'єкту, використовується комбіноване перетворення, що складається із декількох базових. Такі перетворення зазвичай забезпечуються множенням матриць, проте слід пам'ятати, що порядок матриць має значення! 
+           </p>
+           <div style="flex-wrap: wrap;" class="image-cover">
+            <img src="images/theory/afinne7.gif" alt="" class="image">
+        </div>
+ 
+    </div>
+    </div>
+    <div class="video">
+        <iframe style="margin-top: 40px;" width="800" height="500"
+            src="
+            https://www.youtube.com/embed/E3Phj6J287o">
+        </iframe>
+    </div>
+    <div class="test-column">
+        <div class="test-box">
+            <h4>
+                Тест 1
+            </h4>
+            <div class="test-description">
+                <p>
+                   Які бувають афінні перетворення? 
+                </p>
+            </div>
+            <div class="answer-column">
+                <div class="answer-line">
+                    <input type="radio" id="answer1_1"
+                    name="test1" value="Зсуву, додавання, віднімання.">
+                    <label for="answer1_1">Зсуву, додавання, віднімання.</label>
+                </div>
+                <div class="answer-line">
+                    <input type="radio" id="answer2_1"
+                    name="test1" value="Зсуву, масштабування, повороту.">
+                    <label for="answer2_1">Зсуву, масштабування, повороту.</label>
+                </div>
+                <div class="answer-line answer-last-line">
+                    <input type="radio" id="answer3_1"
+                    name="test1" value="Лише зсуву.">
+                    <label for="answer3_1">Лише зсуву.</label>
+                </div>     
+            </div>
+        </div>
+
+        <div class="test-box">
+            <h4>
+                Тест 2
+            </h4>
+            <div class="test-description">
+                <p>
+                    Для чого потрібні однорідні координати?
+                </p>
+            </div>
+            <div class="answer-column">
+                <div class="answer-line">
+                    <input type="radio" id="answer1_2"
+                    name="test2" value="Вони роблять матрицю красивішою.">
+                    <label for="answer1_2">Вони роблять матрицю красивішою.</label>
+                </div>
+                <div class="answer-line">
+                    <input type="radio" id="answer2_2"
+                    name="test2" value="Вони дозволяють задати довільне афінне перетворення у матричному вигляді.">
+                    <label for="answer2_2">Вони дозволяють задати довільне афінне перетворення у матричному вигляді.</label>
+                </div>
+                <div class="answer-line answer-last-line">
+                    <input type="radio" id="answer3_2"
+                    name="test2" value="В них немає ніякої потреби.">
+                    <label for="answer3_2">В них немає ніякої потреби.</label>
+                </div>     
+            </div>
+        </div>
+        <div class="test-box">
+            <h4>
+                Тест 3
+            </h4>
+            <div class="test-description">
+                <p>
+                    Чи можна задавати комбінацію афінних перетворень?
+                </p>
+            </div>
+            <div class="answer-column">
+                <div class="answer-line">
+                    <input type="radio" id="answer1_3"
+                    name="test3" value="Ні, можна виконувати лише одне базове перетворення.">
+                    <label for="answer1_3">Ні, можна виконувати лише одне базове перетворення.</label>
+                </div>
+                <div class="answer-line">
+                    <input type="radio" id="answer2_3"
+                    name="test3" value="Так, можна, склавши ланцюжок базових перетворень з дотриманням порядку.">
+                    <label for="answer2_3">Так, можна, склавши ланцюжок базових перетворень з дотриманням порядку.</label>
+                </div>
+                <div class="answer-line answer-last-line">
+                    <input type="radio" id="answer3_3"
+                    name="test3" value="Так, можна, за будь-яких умов.">
+                    <label for="answer3_3">Так, можна, за будь-яких умов.</label>
+                </div>     
+            </div>
+        </div>
+        <button class="submit-button">Відповісти</button>
+        <a href="hexagon.html" class="back"></a>
+
+    </div>  
+  
+    <script>
+    document.querySelector('.submit-button').addEventListener('click',()=>{
+        let answers1 = document.getElementsByName('test1');
+        let answers2 = document.getElementsByName('test2');
+        let answers3 = document.getElementsByName('test3');
+        let passed = true;
+        answers1.forEach(answer => {
+            if(answer.checked){
+                if(answer.value !== 'Зсуву, масштабування, повороту.'){
+                    passed = false;
+                }
+            }
+        });
+        answers2.forEach(answer => {
+            if(answer.checked){
+
+                if(answer.value !== 'Вони дозволяють задати довільне афінне перетворення у матричному вигляді.'){
+                    passed = false;
+                    console.log(answer.value);
+
+                }
+            }
+    
+        });
+        answers3.forEach(answer => {
+
+            if(answer.checked){
+                if(answer.value !== 'Так, можна, склавши ланцюжок базових перетворень з дотриманням порядку.'){
+                    passed = false;
+                    console.log(answer.value);
+
+                }
+            }
+        });
+        if(passed){
+            alert('Вітаю, ви успішно склали тест!');
+        } else{
+            alert('Ви зробили помилку, перегляньте тест ще раз!');
+        }
+
+    })  
+
+    </script>
+</body>
+</html>

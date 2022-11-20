@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Oswald&family=Roboto+Slab:wght@400;700&family=Square+Peg&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="menu.html" class="logo"></a>
+        <h1 class="theme-title">Кольорові моделі RGB та HSL</h1>
+        <a href="colors_theory.html" class="theoretics"></a>
+    </header>
+    <div class="images-cover">
+        <canvas id="original-image" class="image"></canvas>
+        <canvas id="modified-image" class="image"></canvas>
+    </div>
+
+    
+    <div class="color-configurator">
+        <div class="selected-info">
+
+            <div id="#hovered-color" class="hovered-color"></div>
+            <div class="rgb">rgb(0,0,0)</div>
+            <div class="hsl">hsl(0°,0%,0%)</div>
+
+            <!-- <div class="selected-color" style="width:100px;height:100px"></div> -->
+        </div>
+        <div class="brightness-controll">
+            <div class="color-changer">
+                <div data-active data-color_changer="red" class="red square"></div>
+                <div data-color_changer="green"  class="green square"></div>
+                <div data-color_changer="blue"  class="blue square"></div>
+                <div data-color_changer="cyan"  class="cyan square"></div>
+                <div data-color_changer="magenta"  class="magenta square"></div>
+                <div data-color_changer="yellow"  class="yellow square"></div>
+            </div>
+            <div class="brightness-container"> 
+                <input type="range" step="1" min="-65" max="65" orient="vertical" class="brightness-range"> 
+            </div>
+        </div>
+        <div class="brightness-mode">
+            <h2>Робота з</h2>
+            <select id="mode" name="mode">
+                <option value="1">Фрагмент</option>
+                <option selected value="2">Базовий колір</option>
+            </select>
+
+        </div>
+        <div class="file-buttons">
+            <div> 
+                <label for="image" class="custom-file-upload"> 
+                    <input type="file" id="image" name="image" accept=".png, .jpg, .jpeg"/> 
+                    Вивантажити 
+                </label> 
+                <a class="save-image" download="myImage.jpg" href="" onclick="download_img(this)">Завантажити</a> 
+            </div> 
+        </div>
+    </div>
+    <script   src="./colors.js" type="text/javascript" webkitdirectory multiple> </script>
+
+</body>
+</html>

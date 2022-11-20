@@ -1,0 +1,59 @@
+body{
+    background-image: url('images/Background/Group\ 8.png');
+    background-size: cover;
+    font-family: 'Caveat';
+    position: relative;
+}
+
+.tips{
+    background-image: url('./images/Background/Group\ 10.png');
+    background-size: cover;
+    width: 690px;
+    height: 600px;
+}
+
+.back{
+    display: block;
+    transition: all 0.7s ease;
+
+    width: 100px;
+    aspect-ratio: 1.15;
+    bottom: -10px;
+    right: 40px;
+    background-image: url('images/theory/back.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.back:hover{
+    filter: grayscale(40%);
+    transition: all 0.7s ease;
+}
+.forward:hover{
+    filter: grayscale(40%);
+    transition: all 0.7s ease;
+}
+.forward{
+    display: block;
+    transition: all 0.7s ease;
+
+    width: 100px;
+    aspect-ratio: 1.15;
+    bottom: -10px;
+    right: 40px;
+    background-image: url('images/theory/back.png');
+    transform: rotateY(180deg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.nav-buttons{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0881A3;
+    gap: 20px;
+    border-radius: 16px;
+    position: relative;
+    left: 80%;
+}
